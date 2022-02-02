@@ -1,0 +1,248 @@
+body {
+  color: #40514E;
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-size: 1.5em;
+}
+
+h1 {
+  color: #66BFBF;
+  font-family: 'Sacramento', cursive;
+  font-size: 5.625rem;
+  margin: 0px;
+  padding-top: 6rem;
+}
+
+h2 {
+  color: #66BFBF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  margin: 120px auto auto auto;
+}
+
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: #EAF6F6;
+  border-width: 10px;
+  width: 5%;
+  margin: 100px auto 100px auto;
+}
+
+p {
+  line-height: 2;
+}
+
+a {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EAF6F6;
+}
+
+td {
+  border-style: groove;
+  border-color: #E4F9F5;
+  border-width: 3px;
+  padding: 5px;
+}
+
+.copyright {
+  color: #EAF6F6;
+  font-size: 1em;
+  padding: 20px 0;
+}
+
+.top-container {
+  background-color: #E4F9F5;
+  position: relative;
+  /* padding: 100px; */
+  width: 118.9rem;
+  margin: 0 auto 50px auto;
+}
+.middle-container {
+  position: relative;
+  width: 118.9rem;
+  margin: 0 auto auto auto;
+}
+.bottom-container {
+background-color: #66BFBF;
+width: 118.9rem;
+margin: 50px auto 0 auto;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.first-img {
+  width: 20%;
+  float: left;
+  margin-right: 40px;
+}
+
+.second-img {
+  width: 20%;
+  float: left;
+  margin-right: 40px;
+  /* margin-top: 40px; */
+  /* position: relative;
+  top: 40px; */
+}
+
+.first-skill-img {
+  width: 20%;
+  float: right;
+  margin-left: 40px;
+  position: relative;
+  top: 50px;
+  right: 60px;
+}
+
+.second-skill-img {
+  width: 30%;
+  float: right;
+  margin-left: 40px;
+  position: relative;
+  top: 90px;
+  right: 10px;
+}
+
+
+.intro {
+  width: 40%;
+  margin: auto;
+}
+.pro {
+  text-decoration: underline;
+}
+.pro2 {
+  color: black;
+}
+
+.bottom-cloud {
+  bottom: 300px;
+  left: 450px;
+  position: absolute;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 600px;
+  top: 50px;
+}
+
+.btn {
+  background: #11cdd4;
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  text-shadow: 1px 1px 3px #666666;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+.tooltip {
+  position: relative;
+  /* display: inline-block; */
+  /* border-bottom: 1px dotted black; */
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  top: 100%;
+  left: 50%;
+  margin-left: -100px; /* Use half of the width (120/2 = 60), to center the tooltip */
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+
+
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;  /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  background: #30e3cb;
+
+}
+
+
+.tooltip-hard {
+  position: relative;
+  /* display: inline-block; */
+  /* border-bottom: 1px dotted black; */
+}
+
+.tooltip-hard .tooltiptext-hard {
+  visibility: hidden;
+  width: 400px;
+  top: 100%;
+  left: 50%;
+  margin-left: -200px; /* Use half of the width (120/2 = 60), to center the tooltip */
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+.tooltip-hard .tooltiptext-hard::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;  /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip-hard:hover .tooltiptext-hard {
+  visibility: visible;
+  background: #30e3cb;
+
+}
