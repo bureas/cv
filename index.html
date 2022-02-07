@@ -1,156 +1,313 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Burea Cornel Laurentiu</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="favicon.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script>
+        function showhide()
+        {
+            var div = document.getElementById("newpost");
+            if (div.style.display !== "block") {
+                div.style.display = "block";
+            }
+            else {
+                div.style.display = "none";
+            }
+        }
+    </script>
+
+<!-- 
+    <script>
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                const square = entry.target.querySelector('.contain');
+
+                if (entry.isIntersecting) {
+                    square.classList.add('contain-animation');
+	                return; // if we added the class, exit the function
+                 }
+
+                 // We're not intersecting, so remove the class!
+                square.classList.remove('contain-animation');
+             });
+        });
+
+        observer.observe(document.querySelector('.container'));
+    </script> -->
+
+
+    <title>Larry's personal website</title>
 </head>
-
 <body>
-  <div class="top-container">
-    <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
-    <h1>I'm Larry</h1>
-    <h2> <span class="pro">Welcome</span> to my personal site, enjoy!</h2>
-    <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
-    <img src="images/mountain.png" alt="mountain-img">
-  </div>
-  <div class="middle-container">
-    <div class="profile">
-      <img src="images/luna.png" alt="poza-profi">
-      <h2>Hello!</h2>
-      <p class="intro">I am an IT enthusiast with a clear objective of acquiring knowledge and experience. I love walking my dogs, playing chess and cook(<em>yes cook, it's awesome</em>).</p>
+    <!-- Header -->
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">Hi!</h1>
+            <nav>
+                <ul>
+                    <li>Welcome to my personal site. </li>
+                </ul>
+            </nav>
+        </div>
     </div>
-    <hr class="hr">
-    <div class="skills">
-      <h2>Work Experience <br><em>(It's all about quality, not quantity)</em></h2>
-      <div class="skill-row">
-        <img class="first-img" src="images/robot.jpg" alt="skills-photo">
-        <h3>2013-2017</h3>
-        <p>IT administrator at an Accountant Office.</p>
+    <!-- Contact -->
+    <section class="showcase">
+      <div class="container grid">
+          <div class="showcase-text">
+              <h1>I'm Larry</h1>
+              <p>I am an IT enthusiast with a clear objective of acquiring knowledge and experience. </p>
+              <p>I love walking my dogs, playing chess and cook(yes cook, it's awesome).</p>
+          </div>
+          <div class="showcase-form card">
+              <img src="images/luna2.png" alt="">
+          </div>
       </div>
-      <div class="skill-row">
-        <img class="second-img" src="images/robot2.jpg" alt="second-photo">
-        <h3>2017-2022</h3>
-        <p>System administrator at the Ministry of Finance, CNIF institution.</p>
-      </div>
+    </section>
+
+    <!-- EXP -->
+    
+    <div class="section cli">
+        <div class="container grid bg-primary text-center">
+            <h3>Work Experience:</h3>
+            <div class="workcard">
+                <p> 2015-2017</p>
+                <p>IT administrator at an accounts's office.</p>
+            </div>
+            <div class="workcard ">
+                <p>2017-2022</p>
+                <p>System Administrator at Ministry of Finance - CNIF</p>
+            </div>
+        </div>
     </div>
-    <hr class="hr">
-    <div class="skills">
-      <h2>Skills <br>(<em>Hover-over to check more details.)</em></h2>
-      <div class="skill-row">
-        <img class="first-skill-img" src="images/robot.jpg" alt="skills-photo">
-        <h3>Soft Skills </h3>
-        <table>
-          <tr>
-            <td class="tooltip">Time Management<span class="tooltiptext">Organization Prioritizing <br />Goal setting Planning </span></td>
-            <td class="tooltip"> Comunication <span class="tooltiptext"><a5>Verbal & Written communication Constructive feedback Listening Presentation </a5></span></td>
-            <td class="tooltip"> Interpersonal <span class="tooltiptext"><a5>Networking Tolerance Diplomacy Empathy <br> Humor </a5></span></td>
+    <h3 class="text-center bg-primary">Soft Skills:</h3>
+    <div class="container grid ">
+        <!-- Skills 1 -->
+        <div class="contain">
+            <div class="skills">
+            <div class="details">
+                <span>Attention to detail</span>
+                <span>Excellent</span>
+                
+            </div>
+            <div class="bar">
+                <div id="html-bar"></div>
+            </div>
+            </div>
+            <div class="skills">
+            <div class="details">
+                <span>Interpersonal</span>
+                <span>Excellent</span>
+            </div>
+            <div class="bar">
+                <div id="css-bar"></div>
+            </div>
+            </div>
+            <div class="skills">
+            <div class="details">
+                <span>Comunication</span>
+                <span>Excellent</span>
+            </div>
+            <div class="bar">
+                <div id="javascript-bar"></div>
+            </div>
+            </div>
+            <div class="skills">
+            <div class="details">
+                <span>Teamwork</span>
+                <span>Excellent</span>
+            </div>
+            <div class="bar">
+                <div id="jQuery-bar"></div>
+            </div>
+            </div>
+            <div class="skills">
+                <div class="details">
+                    <span>Work ethic</span>
+                    <span>Excellent</span>
+                </div>
+                <div class="bar">
+                    <div id="jQuery-bar"></div>
+                </div>
+                </div>
+        </div>
+        
+        <!-- Skills 2 -->
+        <div class="contain">
+            <div class="skills">
+            <div class="details">
+                <span>Time Management</span>
+                <span>Excellent</span>
+            </div>
+            <div class="bar">
+                <div id="html-bar"></div>
+            </div>
+            </div>
+            <div class="skills">
+            <div class="details">
+                <span>Problem-solving</span>
+                <span>Excellent</span>
+            </div>
+            <div class="bar">
+                <div id="css-bar"></div>
+            </div>
+            </div>
+            <div class="skills">
+            <div class="details">
+                <span>Adaptability</span>
+                <span>Excellent</span>
+            </div>
+            <div class="bar">
+                <div id="javascript-bar"></div>
+            </div>
+            </div>
+            <div class="skills">
+            <div class="details">
+                <span>Endurance</span>
+                <span>Excellent</span>
+            </div>
+            <div class="bar">
+                <div id="jQuery-bar"></div>
+            </div>
+            </div>
+            <div class="skills">
+                <div class="details">
+                    <span>Creativity</span>
+                    <span>Excellent</span>
+                </div>
+                <div class="bar">
+                    <div id="jQuery-bar"></div>
+                </div>
+                </div>
+        </div>
+    </div>    
+    
+    <!-- Skills -->
+    <section class="cloud my-2 py-2">
+        <h3 class="text-center bg-primary">Hard Skills:</h3>
+        <div class="container">
+            <div class="contain ">
+                <div class="skills">
+                <div class="details">
+                    <span>Oracle Database administration</span>
+                    <span>Proficient</span>
+                </div>
+                <div class="bar">
+                    <div id="oracle-bar"></div>
+                </div>
+                </div>
+                <div class="skills">
+                <div class="details">
+                    <span>Virtual platform administration</span>
+                    <span>Competent</span>
+                </div>
+                <div class="bar">
+                    <div id="virtual-bar"></div>
+                </div>
+                </div>
+                <div class="skills">
+                <div class="details">
+                    <span>Windows/Linux Administration</span>
+                    <span>Competent</span>
+                </div>
+                <div class="bar">
+                    <div id="windows-bar"></div>
+                </div>
+                </div>
+                <div class="skills">
+                <div class="details">
+                    <span>Python Programing</span>
+                    <span>Advanced Beginner</span>
+                </div>
+                <div class="bar">
+                    <div id="python-bar"></div>
+                </div>
+                </div>
+                <div class="skills">
+                    <div class="details">
+                        <span>HTML & CSS</span>
+                        <span>Advanced Beginner</span>
+                    </div>
+                    <div class="bar">
+                        <div id="hcss-bar"></div>
+                    </div>
+                    </div>
+            </div>
 
-          </tr>
-          <tr>
-            <td class="tooltip">Attention to detail <span class="tooltiptext">Introspection Questioning Scheduling Acuity </span></td>
-            <td class="tooltip"> Adaptability<span class="tooltiptext"><a5>Self-management Self-motivation Optimism Calmness Analysis</a5></span></td>
-            <td class="tooltip"> Work ethic <span class="tooltiptext"><a5>Responsibility Professionalism Dependability Commitment Discipline </a5></span></td>
-          </tr>
-          <tr>
-            <td class="tooltip">Problem-solving <span class="tooltiptext">Logical reasoning Decision making Brainstorming Observation Analysis</span></td>
-            <td class="tooltip"> Teamwork<span class="tooltiptext"><a5>Conflict resolution <br />Idea exchange Collaboration Coordination Mediation </a5></span></td>
-            <td class="tooltip"> Creativity<span class="tooltiptext"><a5>Mind-mapping Experimentation Imagination Innovation Questioning </a5></span></td>
-          </tr>
-        </table>
-        <!-- <p1 class="tooltip">Interpersonal Skills |<span class="tooltiptext">Networking Tolerance Diplomacy Empathy <br />Humor</span></p1>
-        <p1 class="tooltip">Attention to detail |<span class="tooltiptext">Introspection Questioning Scheduling Acuity /span></p1>
-        <p1 class="tooltip">Time Management |<span class="tooltiptext">Organization Prioritizing <br />Goal setting Planning </span></p1>
-        <p1 class="tooltip">Problem-solving |<span class="tooltiptext">Logical reasoning Decision making Brainstorming Observation Analysis</span></p1>
-        <p1 class="tooltip">Adaptability |<span class="tooltiptext"><a5>Self-management Self-motivation Optimism Calmness Analysis</a5></span></p1>
-        <p1 class="tooltip">Comunication |<span class="tooltiptext"><a5>Verbal & Written communication Constructive feedback Listening Presentation </a5></span></p1>
-        <p1 class="tooltip">Creativity |<span class="tooltiptext"><a5>Mind-mapping Experimentation Imagination Innovation Questioning </a5></span></p1>
-        <p1 class="tooltip">Work ethic |<span class="tooltiptext"><a5>Responsibility Professionalism Dependability Commitment Discipline </a5></span></p1>
-        <p1 class="tooltip">Teamwork <span class="tooltiptext"><a5>Conflict resolution <br />Idea exchange Collaboration Coordination Mediation </a5></span></p1> -->
-      </div>
-      <div class="skill-row">
-        <img class="second-skill-img" src="images/robot2.jpg" alt="second-photo">
-        <h3>Hard Skills</h3>
-        <table>
-          <tr>
-            <td class="tooltip-hard">Virtual platform administration <span class="tooltiptext-hard">VMware and Hyper-V </span></td>
-            <td class="tooltip-hard"> More Info <span class="tooltiptext-hard"><span class="pro2">Creating</span> and deploying virtual machines, templates, and clones.<br>
-              <span class="pro2">Configuring</span> virtual machine hardware and virtual machine options. <br>
-              <span class="pro2">Managing</span> multi-tiered applications with VMware vSphere vApp. <br>
-              <span class="pro2">Monitoring</span> solutions with the vCenter Solutions Manager. <br>
-              <span class="pro2">Managing</span> virtual machines, including using snapshots. <br>
-              <span class="pro2">Troubleshooting</span> and upgrading virtual machines. <br>
-              <span class="pro2">Deploying</span> OVF templates. <br> </a5></span></td>
-
-          </tr>
-          <tr>
-            <td class="tooltip-hard">Oracle Database administration <span class="tooltiptext-hard">Version 8 to 19c</span></td>
-            <td class="tooltip-hard"> More Info <span class="tooltiptext-hard"><span class="pro2">Monitoring</span> and optimizing the performance of the database.<br>
-              <span class="pro2">Planning</span> for backup and recovery of database information.<br>
-              <span class="pro2">Ensuring</span> compliance with your Oracle license agreement.<br>
-              <span class="pro2">Controlling</span> and monitoring user access to the database.<br>
-              <span class="pro2">Contacting</span> Oracle Corporation for technical support.<br>
-              <span class="pro2">Enrolling</span> users and maintaining system security.<br>
-              <span class="pro2">Installing</span> and upgrading the Oracle server.<br>
-              <span class="pro2">Backing</span> up and restoring the database.<br>
-              <span class="pro2">Maintaining</span> archived data on tape.</td></td>
-
-          </tr>
-          <tr>
-            <td class="tooltip-hard"> Server administration <span class="tooltiptext-hard"><a5>Windows/Linux/Aix </a5></span></td>
-            <td class="tooltip-hard"> More Info <span class="tooltiptext-hard"><span class="pro2">Analyzing</span> system logs and identifying potential issues with computer systems.<br>
-              <span class="pro2">Applying</span> os system updates, patches, and configuration changes.<br>
-              <span class="pro2">Responsibility</span> for documenting the configuration of the system.<br>
-              <span class="pro2">Ensuring</span> parity between dev, test and production environments.<br>
-              <span class="pro2">Installing</span> and configuring new hardware and software.<br>
-              <span class="pro2">Add</span> remove, or update user account information.<br>
-              <span class="pro2">Answering</span> technical queries and assisting users.<br>
-              <span class="pro2">Configure</span> add and delete file systems.<br></span></td>
-          </tr>
-          <tr>
-            <td class="tooltip-hard"> Python programing <span class="tooltiptext-hard"><a5><a href="https://www.udemy.com/course/100-days-of-code/" target="_blank" rel="noopener noreferrer">100 Days of Code: The Complete Python Pro Bootcamp </a></a5></span></td>
-            <td class="tooltip-hard"> More Info <span class="tooltiptext-hard">Git, GitHub and Version Control.<br>
-              Deployment with GitHub Pages.<br>
-              Beautiful Soup, Web Scraping.<br>
-              Web Design, Request, Tkinter.<br>
-              Turtle, HTML 5, CSS 3, APIs.<br>
-              GUI Desktop App Development.<br>
-              Front-End Web Development.<br>
-              Scripting and Automation.<br>
-              PyCharm, Pandas, Plotly.<br>
-              Selenium Web Driver.<br>
-              Game Development. <br>
-              Authentication. <br></span></td>
-          </tr>
-          <tr>
-            <td class="tooltip-hard"> HTML & CSS <span class="tooltiptext-hard">Begginer.</span></td>
-            <td class="tooltip-hard"> More Info <span class="tooltiptext-hard"><a5>This website. </a5></span></td>
-
-          </tr>
-        </table>
-      </div>
-    </div>
-    <hr class="hr">
-    <div class="contact-me">
-      <h2>Get In Touch</h2>
-      <h3>Lorem ipsum dolor sit amet, non elit.</h3>
-      <p>Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
-      <a class="btn" href="mailto:burea2004@email.com">CONTACT ME</a>
-    </div>
-  </div>
-  <div class="bottom-container">
-    <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
-    <a class="footer-link" href="https://twitter.com/">Twitter</a>
-    <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
-    <p class="copyright">© 2022 Burea Cornel Laurentiu.</p>
-  </div>
 
 
+
+
+
+        </div>
+    </section>
+
+    <!-- Tools -->
+
+    
+        <!-- <h2 class="md text-center my-2">
+            Tools
+        </h2>
+        <div class="container flex">
+            <div class="card">
+                
+                <img src="images/logos/vmware3.png" alt="">
+            </div>
+            <div class="card">
+
+                <img src="images/logos/oracle4.png" alt="">
+            </div>
+            <div class="card">
+
+                <img src="images/logos/windows3.png" alt="">
+            </div>
+            <div class="card">
+
+                <img src="images/logos/redhat2.png" alt="">
+            </div>
+            <div class="card">
+
+                <img src="images/logos/python4.png" alt="">
+            </div>
+            <div class="card">
+
+                <img src="images/logos/office3.png" alt="">
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Footer -->
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3 ">
+            <div>
+                <h1>Burea Cornel Laurentiu</h1>
+                <p>Copyright &copy; 2022</p>
+            </div>
+            <div class="contact grid card">
+                <a href="mailto:burea2004@yahoo.com"><button id="button" class="btn btn-primary text-center"> <p>Send Email</p></button></a>
+                <div id="newpost" style="display:none" class="myDIV">
+                    <h2>burea2004@yahoo.com</h2>
+                </div>
+                <button id="button" class="btn btn-primary text-center" onclick="showhide()"> <p>Show Email<p></button>
+                    
+                <!-- <a class="btn btn-primary text-center">Show Email</a> -->
+                <!-- <input id="welcomeDiv" class="btn btn-primary" type="button" name="email" value="Show Email" onclick="showDiv()">Show Email</a> -->
+                <!-- <input type="button" name="answer" value="Show Div" onclick="showDiv()" /> -->
+            </div>
+            <div class="social">
+                <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+    
 </body>
-
 </html>
