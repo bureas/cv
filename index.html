@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script>
+        function showhide()
+        {
+            var div = document.getElementById("newpost");
+            if (div.style.display !== "block") {
+                div.style.display = "block";
+            }
+            else {
+                div.style.display = "none";
+            }
+        }
+    </script>
+
+<!-- 
+    <script>
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                const square = entry.target.querySelector('.contain');
+
+                if (entry.isIntersecting) {
+                    square.classList.add('contain-animation');
+	                return; // if we added the class, exit the function
+                 }
+
+                 // We're not intersecting, so remove the class!
+                square.classList.remove('contain-animation');
+             });
+        });
+
+        observer.observe(document.querySelector('.container'));
+    </script> -->
+
+
+    <title>Larry's personal website</title>
+</head>
+<body>
+    <!-- Header -->
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">Hi!</h1>
+            <nav>
+                <ul>
+                    <li>Welcome to my personal site. </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- Contact -->
+    <section class="showcase">
+      <div class="container grid">
+          <div class="showcase-text">
+              <h1>I'm Larry</h1>
+              <p>I am an IT enthusiast with a clear objective of acquiring knowledge and experience. </p>
+              <p>I love walking my dogs, playing chess and cook(yes cook, it's awesome).</p>
+          </div>
+          <div class="showcase-form card">
+              <img src="images/luna2.png" alt="">
+          </div>
+      </div>
+    </section>
+
+    <!-- EXP -->
+    
+    <div class="section cli">
+        <div class="container grid bg-primary text-center">
+            <h3>Work Experience:</h3>
+            <div class="workcard">
+                <p> 2015-2017</p>
+                <p>IT administrator at an accounts's office.</p>
+            </div>
+            <div class="workcard ">
+                <p>2017-2022</p>
+                <p>System Administrator at Ministry of Finance - CNIF</p>
+            </div>
+        </div>
+    </div>
+    <h3 class="text-center bg-primary">Soft Skills:</h3>
+    <div class="container grid ">
+        <!-- Skills 1 -->
+        <div class="contain">
+            <div class="skills">
+            <div class="details">
+                <span>Attention to detail</span>
+                <span>Excellent</span>
+                
+            </div>
+            <div class="bar">
+                <div id="html-bar"></div>
+            </div>
+            </div>
+            <div class="skills">
+            <div class="details">
+                <span>Interpersonal</span>
+                <span>Excellent</span>
+            </div>
+            <div class="bar">
+                <div id="css-bar"></div>
+            </div>
+            </div>
+            <div class="skills">
+            <div class="details">
+                <span>Comunication</span>
+                <span>Excellent</span>
+            </div>
+            <div class="bar">
+                <div id="javascript-bar"></div>
+            </div>
+            </div>
+            <div class="skills">
+            <div class="details">
+                <span>Teamwork</span>
+                <span>Excellent</span>
+            </div>
+            <div class="bar">
+                <div id="jQuery-bar"></div>
+            </div>
+            </div>
+            <div class="skills">
+                <div class="details">
+                    <span>Work ethic</span>
+                    <span>Excellent</span>
+                </div>
+                <div class="bar">
+                    <div id="jQuery-bar"></div>
+                </div>
+                </div>
+        </div>
+        
+        <!-- Skills 2 -->
+        <div class="contain">
+            <div class="skills">
+            <div class="details">
+                <span>Time Management</span>
+                <span>Excellent</span>
+            </div>
+            <div class="bar">
+                <div id="html-bar"></div>
+            </div>
+            </div>
+            <div class="skills">
+            <div class="details">
+                <span>Problem-solving</span>
+                <span>Excellent</span>
+            </div>
+            <div class="bar">
+                <div id="css-bar"></div>
+            </div>
+            </div>
+            <div class="skills">
+            <div class="details">
+                <span>Adaptability</span>
+                <span>Excellent</span>
+            </div>
+            <div class="bar">
+                <div id="javascript-bar"></div>
+            </div>
+            </div>
+            <div class="skills">
+            <div class="details">
+                <span>Endurance</span>
+                <span>Excellent</span>
+            </div>
+            <div class="bar">
+                <div id="jQuery-bar"></div>
+            </div>
+            </div>
+            <div class="skills">
+                <div class="details">
+                    <span>Creativity</span>
+                    <span>Excellent</span>
+                </div>
+                <div class="bar">
+                    <div id="jQuery-bar"></div>
+                </div>
+                </div>
+        </div>
+    </div>    
+    
+    <!-- Skills -->
+    <section class="cloud my-2 py-2">
+        <h3 class="text-center bg-primary">Hard Skills:</h3>
+        <div class="container">
+            <div class="contain ">
+                <div class="skills">
+                <div class="details">
+                    <span>Oracle Database administration</span>
+                    <span>Proficient</span>
+                </div>
+                <div class="bar">
+                    <div id="oracle-bar"></div>
+                </div>
+                </div>
+                <div class="skills">
+                <div class="details">
+                    <span>Virtual platform administration</span>
+                    <span>Competent</span>
+                </div>
+                <div class="bar">
+                    <div id="virtual-bar"></div>
+                </div>
+                </div>
+                <div class="skills">
+                <div class="details">
+                    <span>Windows/Linux Administration</span>
+                    <span>Competent</span>
+                </div>
+                <div class="bar">
+                    <div id="windows-bar"></div>
+                </div>
+                </div>
+                <div class="skills">
+                <div class="details">
+                    <span>Python Programing</span>
+                    <span>Advanced Beginner</span>
+                </div>
+                <div class="bar">
+                    <div id="python-bar"></div>
+                </div>
+                </div>
+                <div class="skills">
+                    <div class="details">
+                        <span>HTML & CSS</span>
+                        <span>Advanced Beginner</span>
+                    </div>
+                    <div class="bar">
+                        <div id="hcss-bar"></div>
+                    </div>
+                    </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </section>
+
+    <!-- Tools -->
+
+    
+        <!-- <h2 class="md text-center my-2">
+            Tools
+        </h2>
+        <div class="container flex">
+            <div class="card">
+                
+                <img src="images/logos/vmware3.png" alt="">
+            </div>
+            <div class="card">
+
+                <img src="images/logos/oracle4.png" alt="">
+            </div>
+            <div class="card">
+
+                <img src="images/logos/windows3.png" alt="">
+            </div>
+            <div class="card">
+
+                <img src="images/logos/redhat2.png" alt="">
+            </div>
+            <div class="card">
+
+                <img src="images/logos/python4.png" alt="">
+            </div>
+            <div class="card">
+
+                <img src="images/logos/office3.png" alt="">
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Footer -->
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3 ">
+            <div>
+                <h1>Burea Cornel Laurentiu</h1>
+                <p>Copyright &copy; 2022</p>
+            </div>
+            <div class="contact grid card">
+                <a href="mailto:burea2004@yahoo.com"><button id="button" class="btn btn-primary text-center"> <p>Send Email</p></button></a>
+                <div id="newpost" style="display:none" class="myDIV">
+                    <h2>burea2004@yahoo.com</h2>
+                </div>
+                <button id="button" class="btn btn-primary text-center" onclick="showhide()"> <p>Show Email<p></button>
+                    
+                <!-- <a class="btn btn-primary text-center">Show Email</a> -->
+                <!-- <input id="welcomeDiv" class="btn btn-primary" type="button" name="email" value="Show Email" onclick="showDiv()">Show Email</a> -->
+                <!-- <input type="button" name="answer" value="Show Div" onclick="showDiv()" /> -->
+            </div>
+            <div class="social">
+                <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
