@@ -15,10 +15,15 @@ padding: 0;
 margin: 0;
 }
 
-body {
+body,
+html {
     font-family: "lato", sans-serif;
     color: #333;
     line-height: 1.6;
+    margin: 0;
+    display:block;
+    width: 100%;
+    overflow-x:hidden;
 }
 
 ul {
@@ -93,6 +98,7 @@ code, pre {
     height: 400px;
     background-color: var(--primary-color);
     color: #fff;
+    text-decoration: solid;
     position: relative;
     
 }
