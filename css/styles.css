@@ -7,6 +7,7 @@
     --light-color: #f4f4f4;
     --success-color: #5cb85c;
     --error-color: #d9534f;
+    
 }
 
 * {
@@ -25,6 +26,8 @@ html {
     width: 100%;
     overflow-x:hidden;
 }
+
+
 
 ul {
     list-style: none;
@@ -75,6 +78,7 @@ code, pre {
     background-color: var(--primary-color);
     color: #fff;
     height: 70px;
+
 }
 .navbar ul {
     display: flex;
@@ -95,11 +99,11 @@ code, pre {
 
 /* Contact */
 .showcase {
-    height: 400px;
     background-color: var(--primary-color);
     color: #fff;
-    text-decoration: solid;
     position: relative;
+    margin: auto;
+
     
 }
 
@@ -120,7 +124,7 @@ code, pre {
 
 .showcase-text {
     animation: slideInFromLeft 1s ease-in;
-    font-weight: 1500;
+    font-weight: bold;
     text-decoration: solid;
 }
 
@@ -168,7 +172,7 @@ code, pre {
 .profileimg {
   animation: slideInFromRight 1s ease-in;
   width: 100%;
-  overflow-wrap: normal;
+  overflow: visible;
   justify-self: center;
 }
 
@@ -331,8 +335,8 @@ code, pre {
   position: relative;
   border: 2px solid #0d96e0;
   border-radius: 20px;
-
 }
+
 .bar div{
   position: relative;
   width: 0;
@@ -515,6 +519,7 @@ code, pre {
   .cli .grid,
   .cloud .grid,
   .features-main .grid,
+  .workcard,
   .docs-main .grid {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr;
