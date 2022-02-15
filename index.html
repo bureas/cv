@@ -10,37 +10,7 @@
     integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <script>
-        function showhide()
-        {
-            var div = document.getElementById("newpost");
-            if (div.style.display !== "block") {
-                div.style.display = "block";
-            }
-            else {
-                div.style.display = "none";
-            }
-        }
-    </script>
-
-<!-- 
-    <script>
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                const square = entry.target.querySelector('.contain');
-
-                if (entry.isIntersecting) {
-                    square.classList.add('contain-animation');
-	                return; // if we added the class, exit the function
-                 }
-
-                 // We're not intersecting, so remove the class!
-                square.classList.remove('contain-animation');
-             });
-        });
-
-        observer.observe(document.querySelector('.container'));
-    </script> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
     <title>Larry's personal website</title>
@@ -57,17 +27,17 @@
             </nav>
         </div>
     </div>
-    <!-- Contact -->
+    <!-- Intro -->
     <section class="showcase">
       <div class="container grid">
           <div class="showcase-text">
-              <h1>I'm Larry</h1>
+              <h3>I'm Larry</h3>
               <p>I am an IT enthusiast with a clear objective of acquiring knowledge and experience. </p>
               <p>I love walking my dogs, playing chess and cook(yes cook, it's awesome).</p>
           </div>
-          <div class="showcase-form card">
-              <img src="images/luna2.png" alt="">
-          </div>
+
+            <img class="profileimg" src="images/img1.JPG" alt="">
+
       </div>
     </section>
 
@@ -75,23 +45,29 @@
     
     <div class="section cli">
         <div class="container grid bg-primary text-center">
-            <h3>Work Experience:</h3>
+            
             <div class="workcard">
-                <p> 2015-2017</p>
-                <p>IT administrator at an accounts's office.</p>
+                <h3> Work Experience:</h3>
+                <p><span> 2015-2017:</span> IT administrator at an account office.</p>
+                <p></p>
+                <p><span> 2017-2022:</span> System Administrator at Ministry of Finance</p>
+                <p></p>
             </div>
-            <div class="workcard ">
-                <p>2017-2022</p>
-                <p>System Administrator at Ministry of Finance - CNIF</p>
+            <div class="workcard">
+                <h3>Hobbies:</h3>
+                <p> I love walking my two dogs (Luna & Spike).</p>
+                <p> Ocasionally, I play chess at the end of the day.</p>
+                <p>I recently started cooking and it's pretty awesome.</p>
+                
             </div>
         </div>
     </div>
-    <h3 class="text-center bg-primary">Soft Skills:</h3>
+    <h3 class="text-center bg-primary" data-aos="fade-left" data-aos-duration="2000">Soft Skills:</h3>
     <div class="container grid ">
         <!-- Skills 1 -->
         <div class="contain">
             <div class="skills">
-            <div class="details">
+            <div class="details show-on-scroll">
                 <span>Attention to detail</span>
                 <span>Excellent</span>
                 
@@ -189,9 +165,9 @@
     </div>    
     
     <!-- Skills -->
-    <section class="cloud my-2 py-2">
-        <h3 class="text-center bg-primary">Hard Skills:</h3>
-        <div class="container">
+    <section class="cloud my-2 py-2 ">
+        <h3 class="text-center bg-primary" data-aos="fade-right" data-aos-duration="2000">Hard Skills:</h3>
+        <div class="container ">
             <div class="contain ">
                 <div class="skills">
                 <div class="details">
@@ -222,6 +198,16 @@
                 </div>
                 <div class="skills">
                 <div class="details">
+                    <span>Microsoft Office</span>
+                    <span>Competent</span>
+                </div>
+                <div class="bar">
+                    <div id="office-bar"></div>
+                </div>
+                </div>
+                
+                <div class="skills">
+                <div class="details">
                     <span>Python Programing</span>
                     <span>Advanced Beginner</span>
                 </div>
@@ -240,50 +226,12 @@
                     </div>
             </div>
 
-
-
-
-
-
         </div>
     </section>
 
-    <!-- Tools -->
-
-    
-        <!-- <h2 class="md text-center my-2">
-            Tools
-        </h2>
-        <div class="container flex">
-            <div class="card">
-                
-                <img src="images/logos/vmware3.png" alt="">
-            </div>
-            <div class="card">
-
-                <img src="images/logos/oracle4.png" alt="">
-            </div>
-            <div class="card">
-
-                <img src="images/logos/windows3.png" alt="">
-            </div>
-            <div class="card">
-
-                <img src="images/logos/redhat2.png" alt="">
-            </div>
-            <div class="card">
-
-                <img src="images/logos/python4.png" alt="">
-            </div>
-            <div class="card">
-
-                <img src="images/logos/office3.png" alt="">
-            </div>
-        </div>
-    </div> -->
 
     <!-- Footer -->
-    <footer class="footer bg-dark py-5">
+    <footer class="footer bg-dark py-5" >
         <div class="container grid grid-3 ">
             <div>
                 <h1>Burea Cornel Laurentiu</h1>
@@ -301,13 +249,28 @@
                 <!-- <input type="button" name="answer" value="Show Div" onclick="showDiv()" /> -->
             </div>
             <div class="social">
-                <a href="#"><i class="fab fa-github fa-2x"></i></a>
-                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="https://github.com" target="_blank" rel="noopener"><i class="fab fa-github fa-2x"></i></a>
+                <a href="https://facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="https://instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter fa-2x"></i></a>
             </div>
         </div>
     </footer>
-    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+        <script>
+            function showhide()
+            {
+                var div = document.getElementById("newpost");
+                if (div.style.display !== "block") {
+                    div.style.display = "block";
+                }
+                else {
+                    div.style.display = "none";
+                }
+            }
+        </script>
 </body>
 </html>
